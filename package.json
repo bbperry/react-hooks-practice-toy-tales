@@ -1,16 +1,22 @@
 {
+  "homepage": "https://bbperry.github.io/react-hooks-practice-toy-tales",
   "name": "react-hooks-practice-toy-tales",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^3.2.3",
+    "npm": "^8.3.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1"
+    "react-scripts": "4.0.1",
+    "start": "^5.1.0"
   },
   "devDependencies": {
     "json-server": "^0.15.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "server": "json-server --watch db.json -p 3001"
   },
